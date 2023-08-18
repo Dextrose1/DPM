@@ -1,0 +1,96 @@
+.testimonials{
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .4);
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+
+    &__shape{
+        width:15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%); // define how the element float around the shape
+        -webkit-clip-path:  circle(50% at 50% 50%);
+        clip-path:  circle(50% at 50% 50%);
+        transform: translateX(-3rem)
+    }
+
+    &__img{
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .5s;
+    }
+
+
+}
+
+
+/*.testimonials{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg); // this property changes the shape of the story
+
+    &__shape{
+        
+        width:15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path:  circle(50% at 50% 50%);
+        clip-path:  circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg); // the best way to move a floated element is to use the tranform property
+                                     // The skewX changes the photo image back to the normal state
+        position: relative;
+    }
+
+    &__img{
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .5s;
+    }
+
+    &__text{
+        transform: skewX(12deg); // skewx changes the text back to its normal position.
+    }
+
+    &__caption{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate( -50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+
+    }
+
+    &:hover &__img{
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+
+    }
+
+ 
+    
+}
+
+*/

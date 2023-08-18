@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; //  1 rem = 10px; rem are better than px because they scale with the view port.
+    /* 10/16*100 = 62.5*/
+
+}
+body{
+    box-sizing: border-box;  // we set it to border-box so that margin, padding and border are not automatically added
+   
+}
+
