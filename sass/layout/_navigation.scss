@@ -1,0 +1,28 @@
+.navigation{
+    height: 8rem;
+    background-color: $color-green;
+    font-size: 1.6rem;
+
+    &__list{
+        margin-top: 2.3rem;
+        list-style: none;
+        display: inline-block;
+
+    }
+
+    &__item{
+        text-transform: uppercase;
+        display: inline-block;
+        
+        &:not(:last-child){
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__link{
+        color: $color-white;
+        text-decoration: none;  
+    }
+
+
+}
