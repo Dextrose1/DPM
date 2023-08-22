@@ -1,12 +1,15 @@
 .navigation{
     height: 8rem;
+    width: 100%;
     background-color: $color-green;
     font-size: 1.6rem;
+    text-align: right;
 
     &__list{
         margin-top: 2.3rem;
         list-style: none;
         display: inline-block;
+      
 
     }
 
@@ -16,12 +19,35 @@
         
         &:not(:last-child){
             margin-right: 2.5rem;
+        }  
+
+        &:last-child{
+            margin-right: 10rem;
         }
     }
 
     &__link{
+
+        &:link,
+        &:visited{
         color: $color-white;
-        text-decoration: none;  
+        text-decoration: none;
+        background-image: linear-gradient(120deg, transparent 0%, 
+                                             transparent 50%, $color-white 50%);
+                                            // creating the 1st stage of the animation 
+            background-size: 220%;
+            transition: all .4s;
+
+        }
+
+        &:hover,
+        &:active{
+            background-position: 100%;
+            color: $color-green;
+            transform: translateX(1rem);
+            
+        }
+          
     }
 
 
