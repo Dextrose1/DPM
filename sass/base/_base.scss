@@ -10,7 +10,17 @@ html{
     font-size: 62.5%; //  1 rem = 10px; rem are better than px because they scale with the view port.
     /* 10/16*100 = 62.5*/
 
+    @include respond(tab-land){ // width < 1200
+        font-size: 56.25%;    // 1rem = 9px  9/16 * 100
+    }
+    @include respond(tab-port){ // width <900
+        font-size:  50%;  // 1rem = 8px  8/16 * 100
+    }
+    @include respond(big-desktop){
+        font-size: 75% ; //1rem = 12  12/16 * 100 
+    } 
 }
+
 body{
     box-sizing: border-box;  // we set it to border-box so that margin, padding and border are not automatically added
    
